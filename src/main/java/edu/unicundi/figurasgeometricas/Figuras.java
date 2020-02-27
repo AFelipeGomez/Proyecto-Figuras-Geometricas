@@ -8,42 +8,65 @@ package edu.unicundi.figurasgeometricas;
 /**
  *
  *
- * @author Andres Gomez 
+ * @author Andres Gomez-Ruby Cardenas
  */
 public class Figuras {
 
-    private int lado1;
-    private int color;
-    private int cordenada1;
-    private int cordenada2;
-    private int cordenada3;
+    private int coordenada1;
+    private int coordenada2;
+    private int coordenada3;
     private int perimetro;
     private int area;
+    private int color;
 
-    public Figuras(int lado1, int color) {
-        this.lado1 = lado1;
+    public Figuras(int coordenada1, int coordenada2, int coordenada3, int color) {
+
+        this.color = color;
+        this.coordenada1 = coordenada1;
+        this.coordenada2 = coordenada2;
+        this.coordenada3 = coordenada3;
         this.color = color;
 
     }
 
-    public void setLado1(int lado1) {
-        this.lado1 = lado1;
+    public void hallarDistancias() {
+
     }
 
-    public void setColor(int color) {
-        this.color = color;
+    public int getCoordenada1() {
+        return coordenada1;
     }
 
-    public void setCordenada1(int cordenada1) {
-        this.cordenada1 = cordenada1;
+    public int getCoordenada2() {
+        return coordenada2;
     }
 
-    public void setCordenada2(int cordenada2) {
-        this.cordenada2 = cordenada2;
+    public int getCoordenada3() {
+        return coordenada3;
     }
 
-    public void setCordenada3(int cordenada3) {
-        this.cordenada3 = cordenada3;
+    public int getPerimetro() {
+        return perimetro;
+    }
+
+    public int getArea() {
+        return area;
+    }
+
+    public int getColor() {
+        return color;
+    }
+
+    public void setCoordenada1(int coordenada1) {
+        this.coordenada1 = coordenada1;
+    }
+
+    public void setCoordenada2(int coordenada2) {
+        this.coordenada2 = coordenada2;
+    }
+
+    public void setCoordenada3(int coordenada3) {
+        this.coordenada3 = coordenada3;
     }
 
     public void setPerimetro(int perimetro) {
@@ -54,32 +77,8 @@ public class Figuras {
         this.area = area;
     }
 
-    public int getLado1() {
-        return lado1;
-    }
-
-    public int getColor() {
-        return color;
-    }
-
-    public int getCordenada1() {
-        return cordenada1;
-    }
-
-    public int getCordenada2() {
-        return cordenada2;
-    }
-
-    public int getCordenada3() {
-        return cordenada3;
-    }
-
-    public int getPerimetro() {
-        return perimetro;
-    }
-
-    public int getArea() {
-        return area;
+    public void setColor(int color) {
+        this.color = color;
     }
 
 }
