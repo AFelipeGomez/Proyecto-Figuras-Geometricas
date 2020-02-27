@@ -11,8 +11,10 @@ package edu.unicundi.figurasgeometricas;
  */
 public class FigurasRectanguloCuadrado extends Figuras{
 
-    public FigurasRectanguloCuadrado(int lado1, int color) {
-        super(lado1, color);
+    public FigurasRectanguloCuadrado(int coordenada1, int coordenada2, int coordenada3, int color) {
+        super(coordenada1, coordenada2, coordenada3, color);
     }
+
+   
     
 }
